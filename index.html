@@ -1,102 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-
+!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Página Profesional</title>
 
-    <style>
-        * {
-            padding: 0%;
-            margin: 0%;
-        }
-
-        body {
-            background-color: #7272beaf;
-            text-align: center;
-        }
-
-        #Nombre {
-            margin-bottom: 10px;
-            background-color: rgba(255, 255, 255, 0.63);
-        }
-
-        #contenido {
-            position: absolute;
-
-            width: 30%;
-            top: 35%;
-            transform: translateY(-55%);
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        #Conocimiento {
-            background-color:rgba(255, 255, 255, 0.63);
-        }
-        #github{
-            margin-top: 10px;
-            background-color:rgba(255, 255, 255, 0.63);
-        }
-        #Sistemas{
-            margin-top: 10px;
-            background-color:rgba(255, 255, 255, 0.63);
-        }
-        #entornos{
-            margin-top: 10px;
-            background-color:rgba(255, 255, 255, 0.63);
-        }
-        h1 {
-            padding: 5px;
-            background-color: rgb(168, 188, 206);
-            border: 1px solid black;
-        }
-
-        p { 
-            margin-left: 20px;
-            text-align: left;
-            margin-top: 5px;
-            padding: 5px;
-        }
-        a{
-            color: rgb(47, 95, 185);
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
-    <div id="contenido">
-        <div id="Nombre">
-            <h1>Nombre</h1>
-            <p> Pedro Recio Rodríguez</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#Conocimiento">Conocimientos</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Bienvenido a la Github page de Pedro Recio Rodríguez</h1>
+        <p>Esta pagina es una breve representación de mi progreso en el campo de la informatica.</p>
+    </section>
+    <section id="about">
+        <h2>Acerca de Mí</h2>
+        <p>Me llamo Pedro Recio Rodríguez nacido el 4 de enero de 2004, actualmente estoy estudiando un curso de desarrollo de aplicaciones multiplataforma y mi objetivo es poder vivir de lo que estoy estudiando.</p>
+    </section>
+    <section id="Conocimiento">
+        <h2>Conocimientos actuales</h2>
+        <h3>Nivel alto</h3>
+        <p>Java</p>
+        <h3>Nivel medio-alto</h3>
+        <p> Html, css, mysql </p>
+        <h3>Nivel medio</h3>
+        <p>JavaScript, linux, Github, Windows Server</p>
+    </section>
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Juegos Dle</h3>
+            <p>En el pasado como trabajo de clese hice una copia de los juegos de navegador conocidos como Wordle/La palabra del dia y Numble estos estan subidos a mi Github.</p>
         </div>
-        <div id="Conocimiento">
-            <h1>Conocimientos de programación</h1>
-            <p>- Java: nivel medio-alto</p>
-            <p>- Html: nivel medio-alto</p>
-            <p>- Python: nivel bajo</p>
-            <p>- JavaScip: nivel muy bajo</p>
-           
+        <div class="project">
+            <h3>SiegwarDDBB</h3>
+            <p>Como projecto de clase hice una aplicacion que funcionaba como una base de datos sin usa ninguna base de datos solo usando un Excel.</p>
         </div>
-        <div id="Sistemas">
-            <h1>Conocimientos de sistemas informaticos</h1>
-            <p>- Conocimiento medio de redes y sistemas informaticos</p>
-            <p>- Conocimiento medio de Linux</p>
-        </div>
-        <div id="entornos">
-            <h1>- Entornos trabajados</h1>
-            <p>- Eclipse</p>
-            <p>- MySQL Workwench</p>
-            <p>- Visual Studio</p>
-            <p>- Notion</p>
-        </div>
-        <div id="github">
-            <h1>Repertorio</h1>
-            <p>Este es un repertorio referencia de mi trabajo:</p>
-            <a href="https://github.com/Raskatrinsqui/entornos-practica-git">Repertorio de github</a>
-        </div>
-    </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Pedro Recio Rodríguez.</p>
+    </footer>
+    <script src="js/code.js"></script>
 </body>
-
 </html>
